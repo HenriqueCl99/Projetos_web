@@ -1,37 +1,36 @@
-ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	width: 720px;
-	background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
-	float: left;
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-ul li {
-	float: left;
+fieldset {
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px solid #ccc;
+	background: #f8f8f8;
 }
 
-ul a {
+legend {
+	font-weight: bold;
+}
+
+label {
 	display: block;
-	padding: 0 2em;
-	line-height: 2.2em;
-	text-decoration: none;
-	color: white;
-	background: url(../imagens/divisor.png) repeat-y;
+	cursor: pointer;
 }
 
-ul .primeiro a {
-	background: none;
+input [type="text"]{
+	width: 20em;
 }
 
-ul a:hover {
-color: #085662;
-background: #44cade;	
+input.radio, input.checkbox, input.submit {
+	width: auto;
 }
 
-#home #navegacao .home a, 
-#sobre #navegacao .sobre a,
-#servicos #navegacao .servicos a {
-	color: #085662;
-	background: #44cade;
+textarea {
+	width: 20em;
+	height: 10em;
+}
+
+.radio {
+	margin-right: 1em;
 }

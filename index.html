@@ -1,30 +1,52 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>TecBlog - O seu Blog de tecnologia</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/style.css">		
-	</head>
-	<body id="home">
-		<h2>Home</h2>
-		<ul id="navegacao">
-			<li class="home primeiro">
-				<a href="index.html">Home</a>
-			</li>
-			<li class="sobre">
-				<a href="sobre.html">Sobre</a>
-			</li>
-			<li class="servicos">
-				<a href="servicos.html">Serviços</a>
-			</li>
-			<li class="noticias">
-				<a href="noticias.html">Noticias</a>
-			</li>
-			<li class="contato">
-					<a href="contato.html">Contato</a>
-			</li>
-		</ul>
-		
-	</body>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Estilizando Formulários</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<h2>Estilizando formulários</h2>
+	<form action="">
+		<fieldset>
+			<legend>Detalhes de contato</legend>
+				<div>
+					<label for="Nome">Nome:</label>
+					<input type="text" name="nome" id="Nome">
+				</div>
+				<div>
+					<label for="Email">Email:</label>
+					<input type="text" name="nome" id="Email">
+				</div>
+				<div>
+					<label for="url">URL:</label>
+					<input type="text" name="nome" id="url">
+				</div>
+		</fieldset>
+		<fieldset>
+			<legend>Comentários</legend>
+			<div>
+				<label for="mensagem">Mensagem</label>
+				<textarea name="mensagem" id="mensagem"></textarea>
+			</div>
+		</fieldset>
 
+		<fieldset>
+			<legend>Lembrar de mim</legend>
+		<div>
+			<label for="">
+				<input class="radio" type="radio" name="lembrar" id="sim">Sim
+			</label>
+		</div>
+		<div>
+			<label>
+				<input class="radio" type="radio" name="lembrar" id="nao">Não
+			</label>
+		</div>
+		</fieldset>
+
+	</form>
+	
+</body>
 </html>
