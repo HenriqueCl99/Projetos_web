@@ -1,14 +1,27 @@
-.caixa {
-	width: 400px;
-	background: #dedede url(../imagens/topo.png) no-repeat left top;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-.caixa h2 {
- padding-left: 10px 20px 0 20px;
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #fff url(../imagens/fundo.png) repeat-x;
 }
 
-.caixa p{
-	padding-left: 0px 20px 20px 20px;
-	background: url(../imagens/baixo.png) no-repeat left bottom;
-	
+#container {
+	width: 750px;
+	margin: 0 auto;
+}
+
+#topo {
+	height: 150px;
+	background: url(../imagens/detalhe-topo.png) no-repeat right top;
+	padding-top: 25px;
+}
+
+.logo {
+	width: 152px;
+	height: 66px;
+	background: url(../imagens/logo.png) no-repeat;
+	text-indent: -3000px;
 }
