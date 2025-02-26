@@ -81,9 +81,28 @@ body.fotos #navegacao a#fotos{
 	background: #f5f5f5;
 
 }
+#lateral {
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px;
+	background: yellow;
+}
 
-#primario {
+#tres-colunas #primario {
 	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px;
+	background: blue;
+}
+#duas-colunas #primario {
+	width: 555px;
+	float: left;
+	margin: 0 0 20px 195px;
+	background: blue;
+}
+
+#uma-coluna #primario {
+	width: 750px;
 	float: left;
 	margin: 0 0 20px 195px;
 	background: blue;
@@ -94,13 +113,6 @@ body.fotos #navegacao a#fotos{
 	float: left;
 	margin: 0 0 20px 15px;
 	background: green;
-}
-
-#lateral {
-	width: 180px;
-	float: left;
-	margin: 0 0 20px -750px;
-	background: yellow;
 }
 
 #container-rodape {
