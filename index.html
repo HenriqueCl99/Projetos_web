@@ -1,67 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Bootstrap - Elementos flutuantes</title>
+</head>
+<body style="margin-bottom: 200px; padding: 16px;">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <title>Bootstrap - Alinhamento de textos</title>
-  </head>
-
-  <body style="margin-bottom: 200px;padding: 16px;">
-
-
-    <!-- Parágrafo justificado -->
-    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
+  <!--Elementos flutuantes-->
+  <div style="border: 1px solid red;" class="clearfix">
+    <div class="bg-success float-left">Float Left</div>
+    <div class="bg-warning float-right">Float Right</div>
+  </div>
+  
+  <!-- Posicionamento fixo - top e bottom-->
+   <h1 class="">Título do conteúdo fixo</h1>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam 
+    repellat, ipsum ad, sapiente voluptatibus consequuntur distinctio exercitationem 
+    voluptate magni consectetur rerum in architecto, fuga velit culpa accusantium 
+    quibusdam atque dicta!</p>
+    <!--
+      Float responsivo float-<tela>-<direcao>
+      tela: sm, md, lg, xl
+      alinhamento: left, right
+    -->
+    <div class="">tela &gt;=576px *</div> <!--Small-->
+    <div class="">tela &gt;=768px *</div><!--Medium-->
+    <div class="">tela &gt;=992px *</div><!--Large-->
+    <div class="">tela &gt;=1200px *</div><!--Extra Large-->
     <br>
     <br>
 
-    <!-- 
-        Alinhamento responsivo - text-<tela>-<alinhamento>
-            tela: sm, md, lg, xl
-            alinhamento: left, center, right
-     -->
-    <p class="text-sm-center">tela &gt;= 576px</p><!--Small-->
-    <p class="text-md-center">tela &gt;=  768px</p><!--Medium-->
-    <p class="text-lg-center">tela &gt;= 992px</p><!--Large-->
-    <p class="text-lg-center">tela &gt;= 1200px</p><!--Extra Large-->
-
-    <br>
-    <br>
-
-    <!-- Elemento Block para inline -->
-    <h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
-    <p class="bg-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-    <br>
-    <br>
-
-    <!-- Elemento Inline para Block -->
-    <span class="bg-success d-block">Lorem ipsum dolor</span>
-    <span class="bg-success">Lorem ipsum dolor 2</span>
-
-    <br>
-    <br>
-
-    <!-- Elemento Inline-Block -->
-    <h3 class="bg-success">Lorem ipsum</h3>
-    <h3 class="bg-sucess">Lorem ipsum dolor</h3>
-
-
-
-
-    
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam 
+      repellat, ipsum ad, sapiente voluptatibus consequuntur distinctio exercitationem 
+      voluptate magni consectetur rerum in architecto, fuga velit culpa accusantium 
+      quibusdam atque dicta!</p>
+      <!-- Colar no topo (sticky)-->
+       <ul class="list-inline">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+       </ul>
+       
+       <h1>Título do conteúdo</h1>
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam 
+        repellat, ipsum ad, sapiente voluptatibus consequuntur distinctio exercitationem 
+        voluptate magni consectetur rerum in architecto, fuga velit culpa accusantium 
+        quibusdam atque dicta!</p>
   </body>
 </html>
