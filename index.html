@@ -1,105 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
-
-    <title>Bootstrap - botões</title>
-
-    <!-- Required meta tags -->
+    <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Icons fontsAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvR0S7bZs3I02EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Estilos customizados -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Finans - finanças pessoais</title>
   </head>
-
-  <body style="padding-bottom: 200px; width: 600px; margin: 0 auto;">
-
-    <!-- Botoes 
-    formatação padrao: btn
-    formatação específicas:
-    btn-primary, btn-secondary, btn-success, btn-info,
-    btn-warning, btn-danger, btn-light, btn-dark, btn-link
-    -->
-    <h3>Botões</h3>
-    <button class="btn btn-danger" type="button">Clique</button>
-
-    <h3>Botões com diferentes tags</h3>
-    <a class="" href="#">Link</a>
-    <button class="" type="submit">Submit</button>
-    <input class="" type="button" value="Button">
-    <input class="" type="submit" value="Input Submit">
-    <input class="" type="reset" value="Reset">
-
-    <!-- Botoes com contorno
-    btn-outline-<formato>
-    -->
-    <h3>Botões com contorno</h3>
-    <button class="" type="button">Clique</button>
-
-    <!-- Tamanhos de botões
-    opções: btn-lg, btn-sm, btn-block
-    -->
-    <h3>Tamanhos dos botões</h3>
-    <button class="" type="button">Grande</button>
-    <button class="" type="button">Pequeno</button>
-    <br><br>
-    <button class="" type="button">Bloco</button>
-
-    <!-- Estados dos botões
-    opções: active, disabled
-    -->
-    <h3>Estados de botões</h3>
-    <button class="" type="button">Normal</button>
-    <button class="" type="button">Ativo</button>
-    <button class="" type="button">Inativo</button>
-    <br><br>
-    <button class="" type="button">Alternar</button>
-
-    <h3>Grupos de botões - horizontal</h3>
-    <div>
-        <button class="" type="button">Esquerda</button>
-        <button class="" type="button">Centro</button>
-        <button class="" type="button">Direita</button>
-    </div>
-
-    <h3>Grupos de botões - vertical</h3>
-    <div>
-        <button class="" type="button">Topo</button>
-        <button class="" type="button">Meio</button>
-        <button class="" type="button">Fundo</button>
-    </div>
-
-    <h3>Toolbar de botões</h3>
-    <div>
-        <div>
-           <button class="" type="button">1</button>
-           <button class="" type="button">2</button>
-           <button class="" type="button">3</button>
+  <body>
+    <header> <!-- Inicio cabecalho -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="img/logo.png" width="142" alt="logo">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Recursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Benefícios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Preços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="btn btn-outline-light ml-4">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> <!-- Fim cabecalho -->
+    <section id="home"><!-- Inicio section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex">
+                    <div class="align-self-center">
+                        <h1 class="display-4">Suas contas, descomplicadas</h1>
+                        <p>Usado por mais de 1 milhão de pessoas, o Finans é uma ferramenta online que vai facilitar sua vida financeira.</p>
+                        <form action="" class="mt-4 mb-4">
+                            <div class="input-group input-group-lg">
+                                <input type="text" placeholder="Seu e-mail"
+                                 class="form-control">
+                                 <div class="input-group-append">
+                                    <button type="button" class="btn btn-primary">Cadastre-se</button>
+                                 </div>
+                                <p> Disponivel para
+                                    <a href="" class="btn btn-outline-dark">
+                                        <i class="fa-brands fa-android"></i>
+                                    </a>
+                                    <a href="" class="btn btn-outline-dark">
+                                        <i class="fa-brands fa-apple"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/capa-mulher.png" alt="">
+                </div>
+            </div>
         </div>
-        <div>
-            <button class="" type="button">4</button>
-            <button class="" type="button">5</button>
-        </div>
-    </div>
-
-    <h3>Botões dropdown</h3>
-    <div>
-        <button class="" type="button">
-            Clique
-        </button>
-        <div>
-            <a href="#" class="">Link 1</a>
-            <a href="#" class="">Link 2</a>
-            <a href="#" class="">Link 3</a>
-        </div>
-    </div>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    </section><!-- Fim section -->
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
